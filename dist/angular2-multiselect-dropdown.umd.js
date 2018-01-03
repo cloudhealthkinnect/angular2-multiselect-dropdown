@@ -554,7 +554,7 @@ var ListFilterPipe = /** @class */ (function () {
         var found = false;
         for (var prop in item) {
             if (filter.itemName) {
-                if (item[prop].toString().toLowerCase().indexOf(filter.itemName.toLowerCase()) >= 0) {
+                if (item[prop] && item[prop].toString().toLowerCase().indexOf(filter.itemName.toLowerCase()) >= 0) {
                     found = true;
                 }
             }
